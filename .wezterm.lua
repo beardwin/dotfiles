@@ -2,6 +2,8 @@ local wezterm = require 'wezterm'
 local config = {}
 
 config.font = wezterm.font 'FiraCode Nerd Font Mono'
+config.font_size = 13
+
 
 config.keys = {
   {
@@ -23,6 +25,12 @@ config.keys = {
     key = 'W',
     mods = 'CMD',
     action = wezterm.action.CloseCurrentTab { confirm = true },
+  },
+  {
+    key = 'k',
+    mods = 'CMD',
+    action = wezterm.action.ClearScrollback 'ScrollbackAndViewport',
   }
 }
+
 return config
