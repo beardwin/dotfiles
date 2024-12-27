@@ -1,0 +1,10 @@
+mkdir -p ~/.config
+cp ./starship.toml ~/.config/
+
+cd ./ghostty
+./install
+cd ..
+
+cd nvim
+./install
+cd ..

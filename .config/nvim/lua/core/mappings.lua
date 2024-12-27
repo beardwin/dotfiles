@@ -33,4 +33,4 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 vim.keymap.set("n", "<leader>wo", ":%bd|e#|bd#<cr>", { desc = "Delete all other buffers" })
 
-vim.keymap.set({ "n", "i", "v" }, "<C-o>", "<cmd>Oil --float <CR>", { desc = "Launch [O]il in the current directory" })
+vim.keymap.set("n", "<leader>o", "<cmd>Oil --float <CR>", { desc = "Launch [O]il in the current directory" })
