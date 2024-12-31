@@ -1,3 +1,4 @@
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.npm-global/bin:$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$HOME/.rbenv/shims:$HOME/go/bin
 
 eval "$(starship init zsh)"
@@ -117,6 +118,11 @@ alias vim="nvim"
 alias zs="vim ~/.zshrc"
 alias szs="source ~/.zshrc"
 alias ruby-versions="curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash"
+alias shop="cd ~/src/github.com/Shopify/shop-client"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 bindkey -v
+
+[[ -f /opt/dev/sh/chruby/chruby.sh ]] && { type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; } }
+
+[[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
