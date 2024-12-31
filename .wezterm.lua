@@ -65,24 +65,27 @@ config.keys = {
 	},
 }
 
-config.background = {
-	{
-		source = { File = "/Users/ryanbaldwin/Pictures/bg-monterey.jpg" },
-		hsb = {
-			hue = 1.0,
-			saturation = 1.02,
-			brightness = 0.25,
-		},
-		width = "100%",
-		height = "100%",
-	},
-	{
-		source = { Color = "#282c35" },
-		width = "100%",
-		height = "100%",
-		opacity = 0.55,
-	},
-}
+-- config.background = {
+-- 	{
+-- 		source = { File = "/Users/ryanbaldwin/Pictures/bg-monterey.jpg" },
+-- 		hsb = {
+-- 			hue = 1.0,
+-- 			saturation = 1.02,
+-- 			brightness = 0.25,
+-- 		},
+-- 		width = "100%",
+-- 		height = "100%",
+-- 	},
+-- 	{
+-- 		source = { Color = "#282c35" },
+-- 		width = "100%",
+-- 		height = "100%",
+-- 		opacity = 0.55,
+-- 	},
+-- }
+
+config.window_backgroung_opacity = 0.5
+config.macos_window_background_blur = 20
 config.window_decorations = "RESIZE"
 config.window_frame = {
 	border_left_width = "0.5cell",
