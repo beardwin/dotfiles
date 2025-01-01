@@ -82,7 +82,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew aliases colored-man-pages colorize command-not-found gatsby macos zsh-vi-mode)
+# plugins=(git brew aliases colored-man-pages colorize command-not-found gatsby macos zsh-vi-mode)
 
 # source $ZSH/oh-my-zsh.sh
 
@@ -118,3 +118,5 @@ alias zs="vim ~/.zshrc"
 alias szs="source ~/.zshrc"
 alias ruby-versions="curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+bindkey -v
