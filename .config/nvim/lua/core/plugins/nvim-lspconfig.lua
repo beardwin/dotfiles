@@ -165,13 +165,13 @@ return {
     --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
     local servers = {
       -- clangd = {},
-      gopls = {
-        settings = {
-          gopls = {
-            gofumpt = true,
-          },
-        },
-      },
+      -- gopls = {
+      --   settings = {
+      --     gopls = {
+      --       gofumpt = true,
+      --     },
+      --   },
+      -- },
       -- pyright = {},
       -- rust_analyzer = {},
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
