@@ -18,23 +18,23 @@ return {
     workspaces = {
       {
         name = "projects",
-        path = "~/obsidian/projects",
+        path = "~/notes/projects",
       },
       {
         name = "areas",
-        path = "~/obsidian/areas",
+        path = "~/notes/areas",
       },
       {
         name = "resources",
-        path = "~/obsidian/resources",
+        path = "~/notes/resources",
       },
       {
         name = "archive",
-        path = "~/obsidian/archive",
+        path = "~/notes/archive",
       },
       {
         name = "inbox",
-        path = "~/obsidian/inbox",
+        path = "~/notes/inbox",
       },
     },
 
