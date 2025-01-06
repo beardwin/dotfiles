@@ -84,14 +84,14 @@ config.keys = {
 -- 	},
 -- }
 
-config.window_backgroung_opacity = 0.5
+config.window_background_opacity = 0.5
 config.macos_window_background_blur = 20
 config.window_decorations = "RESIZE"
 config.window_frame = {
 	border_left_width = "0.5cell",
 	border_right_width = "0.5cell",
-	border_top_width = "0.5cell",
-	border_bottom_width = "0.5cell",
+	border_top_height = "0.5cell",
+	border_bottom_height = "0.5cell",
 	border_left_color = "#1a1b26",
 	border_right_color = "#1a1b26",
 	border_top_color = "#1a1b26",
