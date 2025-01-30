@@ -1,6 +1,0 @@
-cp ./.aerospace.toml ~/
-cp ./.wezterm.lua ~/
-cp ./.zshrc ~/
-cd ./.config
-./install
-cd ..
