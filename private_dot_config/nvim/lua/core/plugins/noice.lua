@@ -27,11 +27,6 @@ return {
       },
     })
 
-    require("notify").setup({
-      timeout = 3000,
-      stages = "static",
-    })
-
     vim.keymap.set("n", "<leader>nl", function()
       noice.cmd("last")
     end, { desc = "Show [L]ast [N]otification" })

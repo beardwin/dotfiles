@@ -1,4 +1,6 @@
 # dotfiles
-Yep. Just random dotfiles from my home config. Boring. Nothing to see here.
+Yep. Just random dotfiles from my home config. 
 
-Move along.
+Uses [chezmoi](https://www.chezmoi.io) for syncing dotfiles
+
+Boring. Nothing to see here. Move along.
