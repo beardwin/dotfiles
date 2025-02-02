@@ -43,6 +43,8 @@ return {
     -- Telescope picker. This is really useful to discover what Telescope can
     -- do as well as how to actually do it!
 
+    local actions = require("telescope.actions")
+
     -- [[ Configure Telescope ]]
     -- See `:help telescope` and `:help telescope.setup()`
     require("telescope").setup({
@@ -62,6 +64,13 @@ return {
       },
 
       defaults = {
+        mappings = {
+          i = { ["<C-d>"] = actions.delete_buffer },
+          n = {
+            ["<C-d>"] = actions.delete_buffer,
+            ["dd"] = actions.delete_buffer,
+          },
+        },
         path_display = { truncate = 3, shorten = 3 },
       },
     })

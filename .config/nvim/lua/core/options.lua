@@ -18,6 +18,7 @@ vim.opt.tabstop = 2
 vim.opt.expandtab = true
 vim.wo.wrap = false
 
+vim.o.conceallevel = 1
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 

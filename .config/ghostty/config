@@ -19,3 +19,6 @@ window-padding-color = background
 
 window-save-state = always
 window-step-resize = true
+#
+# keybindings
+keybind = super+shift+d=new_split:down
