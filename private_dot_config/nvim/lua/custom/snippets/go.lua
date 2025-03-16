@@ -11,4 +11,11 @@ return {
     i(2),
     t("}"),
   }),
+  s("trun", {
+    t("t.Run("),
+    i(1),
+    t(", func(t *testing.T) {"),
+    i(2),
+    t("})"),
+  }),
 }
