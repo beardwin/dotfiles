@@ -32,9 +32,9 @@ return {
     vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "toggle [D]ebugging [B]reakpoint" })
     vim.keymap.set("n", "<leader>dr", dap.run_to_cursor, { desc = "[D]ebuging [R]un to cursor" })
 
-    vim.keymap.set("n", "<leader>d?", function()
-      require(ui.eval(nil, { enter = true }))
-    end, { desc = "[D]ebugging evaluate under cursor" })
+    vim.keymap.set("n", "<space>?", function()
+      require("dapui").eval(nil, { enter = true })
+    end)
 
     vim.keymap.set("n", "<F6>", dap.continue, { desc = "Debug: continue" })
     vim.keymap.set("n", "<F7>", dap.step_into, { desc = "Debug: step into" })

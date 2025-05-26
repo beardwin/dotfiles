@@ -76,7 +76,7 @@ return {
 
 		-- See `:help telescope.builtin`
 		local builtin = require("telescope.builtin")
-		vim.keymap.set("n", "<leader>cc", builtin.colorscheme, { desc = "[C]hange [C]olor scheme" })
+		vim.keymap.set("n", "<leader>sc", builtin.colorscheme, { desc = "[C]hange [C]olor scheme" })
 		vim.keymap.set("n", "<leader>sh", builtin.help_tags, { desc = "[S]earch [H]elp" })
 		vim.keymap.set("n", "<leader>sk", builtin.keymaps, { desc = "[S]earch [K]eymaps" })
 		vim.keymap.set("n", "<leader>sf", function()

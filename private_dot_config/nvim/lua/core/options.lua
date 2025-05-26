@@ -12,6 +12,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 vim.opt.colorcolumn = "80"
+-- views can only be fully collapsed with the global statusline
+vim.opt.laststatus = 3
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2

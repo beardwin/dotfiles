@@ -199,3 +199,6 @@ eval $(thefuck --alias)
 # bres install zoxide
 eval "$(zoxide init zsh)"
 alias cd="z"
+
+export EDITOR="nvim"
+source ~/.zsh_secrets
