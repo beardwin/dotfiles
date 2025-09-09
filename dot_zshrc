@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.npm-global/bin:$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$HOME/.rbenv/shims:$HOME/go/bin
+export PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH:$HOME/.npm-global/bin:$HOME/Library/Python/3.9/bin::$HOME/.rbenv/shims:$HOME/go/bin
 
 eval "$(starship init zsh)"
 
@@ -202,3 +202,5 @@ alias cd="z"
 
 export EDITOR="nvim"
 source ~/.zsh_secrets
+
+. "$HOME/.local/bin/env"

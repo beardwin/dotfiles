@@ -8,6 +8,28 @@ return {
 	},
 	config = function()
 		require("codecompanion").setup({
+			adapters = {
+				openai = function()
+					return require("codecompanion.adapters").extend("openai", {
+						env = {
+							api_key = "cmd:op read op://secrets/openai/credential --no-newline",
+						},
+					})
+				end,
+
+				anthropic = function()
+					return require("codecompanion.adapters").extend("anthropic", {
+						env = {
+							api_key = "cmd:op read op://secrets/anthropic/credential --no-newline",
+						},
+						schema = {
+							model = {
+								default = "claude-sonnet-4-20250514",
+							},
+						},
+					})
+				end,
+			},
 			strategies = {
 				chat = {
 					adapter = "anthropic",
