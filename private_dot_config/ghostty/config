@@ -19,3 +19,4 @@ window-padding-color = background
 
 window-save-state = always
 window-step-resize = true
+keybind = shift+enter=text:\x1b\r

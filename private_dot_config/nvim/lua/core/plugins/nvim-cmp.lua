@@ -104,6 +104,7 @@ return {
 				-- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
 				--    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
 			}),
+
 			sources = {
 				{
 					name = "lazydev",
@@ -116,6 +117,10 @@ return {
 				{ name = "luasnip" },
 				{ name = "codecompanion" },
 				{ name = "vim-dadbod-completion" },
+			},
+
+			formatting = {
+				format = require("nvim-highlight-colors").format,
 			},
 		})
 
